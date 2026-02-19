@@ -1,5 +1,5 @@
 const express = require("express");
-const authRoutes = require("./routes/auth.routes");
+const mobileRoutes = require("./mobile/mobile.auth.routes");
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.get("/health", (_req, res) => {
 });
 
 // routes
-app.use("/auth", authRoutes);
+app.use("/auth/mobile", mobileRoutes);
 
 // global error handler
 // eslint-disable-next-line no-unused-vars
