@@ -1,4 +1,4 @@
-const service = require("../services/auth.service");
+const service = require("../services/mobile.auth.service");
 
 exports.requestOtp = async (req, res, next) => {
     try {
